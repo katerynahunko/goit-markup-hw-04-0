@@ -145,6 +145,8 @@ header {
 }
 
 .header-contacts-link {
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -161,13 +163,29 @@ header {
   margin-right: 215px;
 }
 
+.contacts-icon {
+  margin-right: 10px;
+  margin-bottom: 0;
+  width: 16px;
+  height: 16px;
+  fill: #757575;
+}
+
+.header-contacts-link:hover .contacts-icon,
+.header-contacts-link:focus .contacts-icon {
+  fill: var(--accent-color);
+}
+
 .hero {
-  background-color: #C4C4C4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-  url("/images/bg.jpg");
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-background-size: cover;
+  background-size: cover;
   padding: 200px 0;
 }
 
@@ -240,6 +258,16 @@ background-size: cover;
   padding-left: 0;
 }
 
+.features-list-item-icon {
+  display: flex;
+  align-items: center;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
 .features-list-item {
   margin-right: 30px;
   margin-top: 30px;
@@ -293,8 +321,10 @@ background-size: cover;
   margin-right: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
-  border-radius: 50%;
-  
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-wrapper {
@@ -319,7 +349,7 @@ background-size: cover;
   color: var(--text-color);
 }
 
-.social-list{
+.social-list {
   display: flex;
   justify-content: space-between;
   padding-left: 32px;
@@ -334,22 +364,21 @@ background-size: cover;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  }
+}
 
 .social-list-icon {
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-fill: white;
+  fill: white;
 }
-
 
 /* Footer */
 
