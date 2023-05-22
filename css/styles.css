@@ -458,12 +458,6 @@ footer {
   align-items: baseline;
 }
 
-.footer-blocks {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 156px;
-}
-
 .footer-second-block {
   margin-left: 70px;
 }
